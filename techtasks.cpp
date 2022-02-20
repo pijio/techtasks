@@ -37,7 +37,7 @@ char* RemoveExcess(char* input, char* blacklist)
 }
 bool isPalindrom(char* input) // функция проверки на палиндром
 {
-    static char banned[6] = { ' ','.',',',':','-' };
+    static char banned[11] = { ' ','.',',',':','-',')','(','"',';','?','!'};
     input = RemoveExcess(input, banned);
     for (size_t i = 0; i < strlen((const char*)input) / 2; i++)
     {
